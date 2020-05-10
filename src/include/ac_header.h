@@ -14,6 +14,8 @@
 
 #include <math.h>
 #include <vector>
+#include <stack>
+
 const double pi = acos(-1.0);
 const double eps = 1e-11;
 
@@ -25,6 +27,16 @@ inline void ckmax(T &a, T b) { a = max(a, b); }
 
 template<class T>
 inline T sqr(T x) { return x * x; }
+
 #include <iostream>
+
 using namespace std;
+
+struct TreeNode {
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+};
+
 #endif //MYLEETCODE_AC_HEADER_H
