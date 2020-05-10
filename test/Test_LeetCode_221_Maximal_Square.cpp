@@ -1,7 +1,6 @@
 //
 // Created by shanhai on 2020/5/8.
 //
-#define CATCH_CONFIG_MAIN
 #include "catch.hpp"
 
 #include "../src/array/LeetCode_221_Maximal_Square.cpp"
