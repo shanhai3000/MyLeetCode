@@ -11,3 +11,8 @@ set(ARRAY_SOURCES_FILE
         )
 add_library(MyLeetCode ${ARRAY_SOURCES_FILE})
 
+set(TEST_DIR ${CMAKE_CURRENT_SOURCE_DIR}/test)
+set(SOURCES_TESTS
+        ${TEST_DIR}/Test_LeetCode_221_Maximal_Square.cpp
+        )
+add_executable(MyLeetCodeTest ${SOURCES_TESTS})
