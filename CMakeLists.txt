@@ -7,6 +7,7 @@ set(HEADER_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src/include)
 set(ARRAY_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src/array)
 set(TREE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src/tree)
 set(CALCULATE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src/calculate)
+set(STACK_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src/stack)
 
 set(ARRAY_SOURCES_FILE
         ${ARRAY_DIR}/LeetCode_221_Maximal_Square.cpp
@@ -18,7 +19,10 @@ set(TREE_SOURCES_FILE
 set(CALCULATE_SOURCES_FILE
         ${CALCULATE_DIR}/LeetCode_50_Pow.cpp.cpp
         )
-add_library(MyLeetCode ${ARRAY_SOURCES_FILE} ${TREE_SOURCES_FILE})
+set(STACK_SOURCES_FILE
+        ${STACK_DIR}/LeetCode_155_MinStack.cpp
+        )
+add_library(MyLeetCode ${ARRAY_SOURCES_FILE} ${TREE_SOURCES_FILE} ${STACK_SOURCES_FILE})
 
 set(TEST_DIR ${CMAKE_CURRENT_SOURCE_DIR}/test)
 set(SOURCES_TESTS
