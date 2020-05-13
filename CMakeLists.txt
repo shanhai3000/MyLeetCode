@@ -15,6 +15,7 @@ set(ARRAY_SOURCES_FILE
         )
 set(TREE_SOURCES_FILE
         ${TREE_DIR}/LeetCode_236_Lowest_Common_Ancestor_of_a_Binary_Tree.cpp
+        ${TREE_DIR}/LeetCode_102_LevelOrderTraversal.cpp
         )
 set(CALCULATE_SOURCES_FILE
         ${CALCULATE_DIR}/LeetCode_50_Pow.cpp.cpp
@@ -31,5 +32,5 @@ set(SOURCES_TESTS
         ${TEST_DIR}/Test_LeetCode_5404_StackArray.cpp
         ${TEST_DIR}/Test_LeetCode_236_Lowest_Common_Ancestor_of_a_Binary_Tree.cpp
         ${TEST_DIR}/Test_LeetCode_50_Pow.cpp
-        )
+        test/Test_LeetCode_102_LevelOrderTraversal.cpp)
 add_executable(MyLeetCodeTest ${SOURCES_TESTS})

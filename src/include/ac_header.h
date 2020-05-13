@@ -15,6 +15,7 @@
 #include <math.h>
 #include <vector>
 #include <stack>
+#include <queue>
 
 const double pi = acos(-1.0);
 const double eps = 1e-11;
